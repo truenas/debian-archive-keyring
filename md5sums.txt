@@ -1,0 +1,11 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+7c425b84df462886c76782f49b967c52  keyrings/debian-archive-keyring.gpg
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+
+iD8DBQFDw3JkliSD4VZixzQRAuZ3AJ9aqW8pZCwvnW5xTpfO9ZaFzQH7MgCcCusF
+sAs43MMqyF1wVqA/jbCG1vA=
+=egDh
+-----END PGP SIGNATURE-----

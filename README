@@ -1,0 +1,13 @@
+README for the debian-archive-keyring package
+=============================================
+
+
+Introduction
+------------
+
+The Debian project signs its Release files that are stored on the
+debian ftp-server and its mirrors with the keys contained in this
+packages.
+
+
+
