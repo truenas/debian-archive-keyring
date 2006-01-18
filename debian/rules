@@ -31,6 +31,7 @@ binary-indep: checkroot
 
 	$(install_dir) debian/tmp/usr/share/keyrings/
 	$(install_file) keyrings/debian-archive-keyring.gpg debian/tmp/usr/share/keyrings/
+	$(install_file) keyrings/debian-archive-removed-keys.gpg debian/tmp/usr/share/keyrings/
 
 	$(install_dir) debian/tmp/usr/share/doc/debian-archive-keyring/
 	$(install_file) README debian/tmp/usr/share/doc/debian-archive-keyring/
@@ -48,11 +49,12 @@ binary-indep: checkroot
 
 	$(install_dir) debian/debian-archive-keyring-udeb/usr/share/keyrings/
 	$(install_file) keyrings/debian-archive-keyring.gpg debian/debian-archive-keyring-udeb/usr/share/keyrings/
+	$(install_file) keyrings/debian-archive-removed-keys.gpg debian/debian-archive-keyring-udeb/usr/share/keyrings/
 
 	# Don't let dpkg-gencontrol write incorrect guesses to debian/files.
 	# Instead, register the udeb manually.
 	dpkg-gencontrol -pdebian-archive-keyring-udeb -Tdebian/debian-archive-keyring-udeb.substvars -Pdebian/debian-archive-keyring-udeb -isp -fdebian/files~
-	dpkg-distaddfile debian-archive-keyring-udeb_$(VERSION)_all.udeb debian-installer optional
+	dpkg-distaddfile debian-archive-keyring-udeb_$(VERSION)_all.udeb debian-installer standard
 	chown -R root.root debian/debian-archive-keyring-udeb
 	chmod -R go=rX debian/debian-archive-keyring-udeb
 	dpkg --build debian/debian-archive-keyring-udeb ../debian-archive-keyring-udeb_$(VERSION)_all.udeb
@@ -61,6 +63,7 @@ binary-arch:
 
 define checkdir
 	test -f keyrings/debian-archive-keyring.gpg
+	test -f keyrings/debian-archive-removed-keys.gpg
 endef
 
 # Below here is fairly generic really

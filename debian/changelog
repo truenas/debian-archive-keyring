@@ -1,3 +1,10 @@
+debian-archive-keyring (2006.01.18) unstable; urgency=low
+
+  * changed priority to standard (closes: #348426)
+  * added empty debian-archive-removed-keys.gpg
+
+ -- Michael Vogt <mvo@debian.org>  Wed, 18 Jan 2006 23:10:58 +0100
+
 debian-archive-keyring (2006.01.10) unstable; urgency=low
 
   * initial release

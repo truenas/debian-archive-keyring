@@ -1,6 +1,6 @@
 Source: debian-archive-keyring
 Section: misc
-Priority: optional
+Priority: standard
 Maintainer: Michael Vogt <mvo@debian.org>
 Standards-Version: 3.6.1.0
 
