@@ -1,3 +1,12 @@
+debian-archive-keyring (2006.11.22) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Add Etch release key
+  * Bump priority to important (Closes: Bug#397698)
+  * Update FSF address in copyright.
+
+ -- Anthony Towns <aj@azure.humbug.org.au>  Wed, 22 Nov 2006 01:30:50 +1000
+
 debian-archive-keyring (2006.01.18) unstable; urgency=low
 
   * changed priority to standard (closes: #348426)

@@ -1,10 +1,10 @@
 Source: debian-archive-keyring
 Section: misc
-Priority: standard
 Maintainer: Michael Vogt <mvo@debian.org>
 Standards-Version: 3.6.1.0
 
 Package: debian-archive-keyring
+Priority: important
 Architecture: all
 Depends: gnupg (>= 1.0.6-4)
 Description: GnuPG archive keys of the Debian archive
@@ -12,6 +12,7 @@ Description: GnuPG archive keys of the Debian archive
  contains the archive keys used for that.
 
 Package: debian-archive-keyring-udeb
+Priority: standard
 Architecture: all
 Section: debian-installer
 Recommends: gpgv-udeb
