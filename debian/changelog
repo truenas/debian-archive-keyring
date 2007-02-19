@@ -1,3 +1,14 @@
+debian-archive-keyring (2007.02.19) unstable; urgency=low
+
+  * added Etch stable release key (ID: ADB11277) (closes: #410788)
+  * moved to debian-archive-removed-keys.gpg:
+    - Debian Archive Automatic Signing Key (2004) [1DB114E0]
+    - Debian Archive Automatic Signing Key (2005) [4F368D5D]
+    - Debian AMD64 Archive Key  [B5F5BBED] (closes: #386956)
+  * improved the README (closes: #400942)
+
+ -- Michael Vogt <mvo@debian.org>  Mon, 19 Feb 2007 10:02:06 +0100
+
 debian-archive-keyring (2006.11.22) unstable; urgency=low
 
   * Non-maintainer upload.

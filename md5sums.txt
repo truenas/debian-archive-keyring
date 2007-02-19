@@ -1,12 +1,2 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
-7c425b84df462886c76782f49b967c52  keyrings/debian-archive-keyring.gpg
-d41d8cd98f00b204e9800998ecf8427e  keyrings/debian-archive-removed-keys.gpg
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.2 (GNU/Linux)
-
-iD8DBQFDzr3nliSD4VZixzQRAgm2AJ9DY9KlYrIoKl2TqmOhDTXVVIh59QCdFrU9
-0YRWdp0xig1qCiCw3ty/nko=
-=q0Eo
------END PGP SIGNATURE-----
+784726be1085ee68459e6dec7b43cbc4  keyrings/debian-archive-keyring.gpg
+3c53f106da084f920d5549556264a914  keyrings/debian-archive-removed-keys.gpg
