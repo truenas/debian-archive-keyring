@@ -12,7 +12,7 @@ Description: GnuPG archive keys of the Debian archive
  contains the archive keys used for that.
 
 Package: debian-archive-keyring-udeb
-Priority: standard
+Priority: optional
 Architecture: all
 Section: debian-installer
 Recommends: gpgv-udeb

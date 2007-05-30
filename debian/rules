@@ -49,12 +49,9 @@ binary-indep: checkroot
 
 	$(install_dir) debian/debian-archive-keyring-udeb/usr/share/keyrings/
 	$(install_file) keyrings/debian-archive-keyring.gpg debian/debian-archive-keyring-udeb/usr/share/keyrings/
-	$(install_file) keyrings/debian-archive-removed-keys.gpg debian/debian-archive-keyring-udeb/usr/share/keyrings/
+	install -m 755 debian/debian-archive-keyring-udeb.postinst debian/debian-archive-keyring-udeb/DEBIAN/postinst
 
-	# Don't let dpkg-gencontrol write incorrect guesses to debian/files.
-	# Instead, register the udeb manually.
-	dpkg-gencontrol -pdebian-archive-keyring-udeb -Tdebian/debian-archive-keyring-udeb.substvars -Pdebian/debian-archive-keyring-udeb -isp -fdebian/files~
-	dpkg-distaddfile debian-archive-keyring-udeb_$(VERSION)_all.udeb debian-installer standard
+	dpkg-gencontrol -ndebian-archive-keyring-udeb_$(VERSION)_all.udeb -pdebian-archive-keyring-udeb -Tdebian/debian-archive-keyring-udeb.substvars -Pdebian/debian-archive-keyring-udeb -isp
 	chown -R root.root debian/debian-archive-keyring-udeb
 	chmod -R go=rX debian/debian-archive-keyring-udeb
 	dpkg --build debian/debian-archive-keyring-udeb ../debian-archive-keyring-udeb_$(VERSION)_all.udeb

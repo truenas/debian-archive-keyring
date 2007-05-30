@@ -1,3 +1,14 @@
+debian-archive-keyring (2007.02.19-0.1) unstable; urgency=low
+
+  * NMU for d-i.
+  * Add a postinst to the udeb that creates an archive.gpg symlink
+    if one doesn't yet exist. Closes: #423428
+  * Clean up use of dpkg-gencontrol, removing obsolete workaround.
+  * Remove removed-keys keyring from udeb to save space. Closes: #423422
+  * Set udeb priority to optional to match overrides.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 30 May 2007 14:38:39 -0400
+
 debian-archive-keyring (2007.02.19) unstable; urgency=low
 
   * added Etch stable release key (ID: ADB11277) (closes: #410788)
