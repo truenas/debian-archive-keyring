@@ -1,3 +1,9 @@
+debian-archive-keyring (2007.07.31) unstable; urgency=low
+
+  * added 'volatile' signing key (ID: BBE55AB3)
+
+ -- Michael Vogt <mvo@debian.org>  Tue, 31 Jul 2007 18:35:13 +0200
+
 debian-archive-keyring (2007.02.19-0.1) unstable; urgency=low
 
   * NMU for d-i.
