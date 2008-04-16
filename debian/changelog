@@ -1,3 +1,13 @@
+debian-archive-keyring (2008.04.16) unstable; urgency=low
+
+  * New maintainer: Debian Release Team.
+  * Add Lenny Stable Release key (ID: F42584E6).
+  * Move to debian-archive-removed-keys.gpg:
+    - Debian Archive Automatic Signing Key (2006) (ID: 2D230C5F).
+  * Move gnupg to Recommends (Closes: #387688).
+
+ -- Luk Claes <luk@debian.org>  Wed, 16 Apr 2008 20:42:26 +0000
+
 debian-archive-keyring (2007.07.31) unstable; urgency=low
 
   * added 'volatile' signing key (ID: BBE55AB3)
