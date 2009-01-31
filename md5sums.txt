@@ -1,2 +1,2 @@
-561b00a16cf02c32841018b42c0f1505  keyrings/debian-archive-keyring.gpg
+B79BFB9BBBFF2A4FBFF58BFAD3813085  keyrings/debian-archive-keyring.gpg
 bc5b9eeec3658bcb00ef54a7ebd5e0a4  keyrings/debian-archive-removed-keys.gpg

@@ -1,3 +1,12 @@
+debian-archive-keyring (2009.01.31) unstable; urgency=low
+
+  * Add Debian Archive Automatic Signing Key (5.0/lenny) 
+    (ID: 55BE302B).
+  * Add Debian-Volatile Archive Automatic Signing Key (5.0/lenny) 
+    (ID: 6D849617).
+
+ -- Luk Claes <luk@debian.org>  Sat, 31 Jan 2009 22:25:18 +0000
+
 debian-archive-keyring (2008.04.16+nmu1) unstable; urgency=low
 
   * Non-maintainer upload.
