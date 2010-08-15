@@ -1,3 +1,15 @@
+debian-archive-keyring (2010.08.15) unstable; urgency=low
+
+  * Team upload.
+  * Add Squeeze Stable Release Key (ID: B98321F9).  (Closes: #540890)
+  * Add a DEBIAN/md5sums file to the non-udeb package.  (Closes: #534934)
+  * Move to debian-archive-removed-keys.gpg:
+    - Debian Archive Automatic Signing Key (4.0/etch)
+    - Etch Stable Release Key
+    - Debian-Volatile Archive Automatic Signing Key (4.0/etch)
+
+ -- Philipp Kern <pkern@debian.org>  Sun, 15 Aug 2010 22:59:38 +0200
+
 debian-archive-keyring (2009.01.31) unstable; urgency=low
 
   * Add Debian Archive Automatic Signing Key (5.0/lenny) 

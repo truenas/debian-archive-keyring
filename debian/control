@@ -1,7 +1,7 @@
 Source: debian-archive-keyring
 Section: misc
 Maintainer: Debian Release Team <packages@release.debian.org>
-Uploaders: Luk Claes <luk@debian.org>
+Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.3
 
 Package: debian-archive-keyring
