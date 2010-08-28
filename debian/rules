@@ -17,15 +17,15 @@ install_binary=install -m 755 -s
 VERSION := $(shell dpkg-parsechangelog | grep ^Version: | cut -d' ' -f2)
 
 build:
+	make
 
-clean:
-	$(checkdir)
-	-rm -f foo foo.asc *.bak *~ */*~ debian/files* debian/*substvars
+clean: checkroot
+	make clean
+	-rm -f *.bak *~ */*~ debian/files* debian/*substvars
 	-rm -rf debian/tmp debian/debian-archive-keyring-udeb
 	dh_clean
 
 binary-indep: checkroot
-	$(checkdir)
 	-rm -rf debian/tmp
 	$(install_dir) debian/tmp/DEBIAN/
 	$(install_script) debian/postinst debian/tmp/DEBIAN/
@@ -60,17 +60,12 @@ binary-indep: checkroot
 
 binary-arch:
 
-define checkdir
-	test -f keyrings/debian-archive-keyring.gpg
-	test -f keyrings/debian-archive-removed-keys.gpg
-endef
-
 # Below here is fairly generic really
 
 binary:		binary-indep binary-arch
 
 checkroot:
-	$(checkdir)
-	test root = "`whoami`"
+	dh_testdir
+	dh_testroot
 
 .PHONY: binary binary-arch binary-indep clean checkroot

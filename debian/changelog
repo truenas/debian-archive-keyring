@@ -1,3 +1,11 @@
+debian-archive-keyring (2010.08.28) unstable; urgency=low
+
+  * Team upload.
+  * Add Debian Archive Automatic Signing Key (6.0/squeeze) (ID: 473041FA).
+  * Convert keyring generation to jetring.
+
+ -- Philipp Kern <pkern@debian.org>  Sat, 28 Aug 2010 23:17:21 +0200
+
 debian-archive-keyring (2010.08.15) unstable; urgency=low
 
   * Team upload.
