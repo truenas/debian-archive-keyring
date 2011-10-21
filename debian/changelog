@@ -1,3 +1,12 @@
+debian-archive-keyring (2011.10.21) experimental; urgency=low
+
+  * Team upload.
+  * Put debian-archive-keyring.gpg into trusted.gpg.d.
+  * Remove old keys from trusted.gpg upon upgrade.
+  * Convert to dh7.
+
+ -- Philipp Kern <pkern@debian.org>  Fri, 21 Oct 2011 12:36:10 +0200
+
 debian-archive-keyring (2010.08.28) unstable; urgency=low
 
   * Team upload.

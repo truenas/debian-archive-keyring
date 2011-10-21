@@ -31,5 +31,10 @@ clean:
 	rm -f keyrings/team-members.gpg \
 		keyrings/team-members.gpg.lastchangeset
 
+install: build
+	install -d $(DESTDIR)/usr/share/keyrings/
+	cp keyrings/debian-archive-keyring.gpg $(DESTDIR)/usr/share/keyrings/
+	cp keyrings/debian-archive-removed-keys.gpg $(DESTDIR)/usr/share/keyrings/
+
 .PHONY: verify-indices clean
 
