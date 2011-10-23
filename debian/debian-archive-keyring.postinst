@@ -2,24 +2,28 @@
 
 set -e
 
+export GPG_CMD="gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /etc/apt/secring.gpg --trustdb-name /etc/apt/trustdb.gpg"
+
 case "$1" in
   configure)
     if dpkg --compare-versions "$2" lt "2011.10.21"
     then
-      if [ -n "$2" ]
+      if [ -n "$2" -a -e /etc/apt/trusted.gpg ]
       then
-        if which apt-key >/dev/null 2>&1
+        if which gpg >/dev/null 2>&1
         then
           # Remove old keys from /etc/apt/trusted.gpg
-          for keyid in F42584E6 55BE302B 6D849617 B98321F9 473041FA
+          for keyid in $($GPG_CMD /etc/apt/trusted.gpg | sed -n -r -e 's,pub .*/([0-9A-F]+).*,\1,p' | grep -x -E 'F42584E6|55BE302B|6D849617|B98321F9|473041FA')
           do
             echo "Removing trusted apt key $keyid from /etc/apt/trusted.gpg ..."
-            apt-key del "$keyid"
+            $GPG_CMD --primary-keyring /etc/apt/trusted.gpg \
+                     --quiet --batch --delete-key --yes "$keyid"
           done
         fi
       fi
       # Install the symlink upon first installation
-      ln -s /usr/share/keyrings/debian-archive-keyring.gpg /etc/apt/trusted.gpg.d/debian-archive-keyring.gpg
+      ln -sf /usr/share/keyrings/debian-archive-keyring.gpg \
+             /etc/apt/trusted.gpg.d/debian-archive-keyring.gpg
       echo "Installed debian-archive-keyring as a trusted apt keyring."
     fi
     ;;
