@@ -1,3 +1,22 @@
+debian-archive-keyring (2012.1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Philipp Kern ]
+  * Do not require a gnupg homedir. (Closes: #665057)
+  * Set `Priority: important' in the source stanza of debian/control.
+    (Closes: #611805)
+  * Move Lenny keys to removed.
+
+  [ David Kalnischkies ]
+  * Ship each active key in a separate keyring in /etc/apt/trusted.gpg.d/
+    as conffiles for simpler usage of apt-secure(8).
+  * Remove all active keys from /etc/apt/trusted.gpg as they are shipped
+    now as fragment files.
+  * Depend on gpgv and only recommend gnupg. (Closes: #387688)
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 02 May 2012 12:45:26 +0200
+
 debian-archive-keyring (2011.10.23) experimental; urgency=low
 
   * Team upload.

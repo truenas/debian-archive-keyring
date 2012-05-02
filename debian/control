@@ -1,13 +1,15 @@
 Source: debian-archive-keyring
+Priority: important
 Section: misc
 Maintainer: Debian Release Team <packages@release.debian.org>
 Build-Depends: debhelper (>= 7), jetring, gnupg
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 
 Package: debian-archive-keyring
-Priority: important
 Architecture: all
-Depends: gnupg, ${misc:Depends}
+Depends: gpgv, apt, ${misc:Depends}
+Recommends: gnupg
+Breaks: apt (<< 0.7.25.1)
 Description: GnuPG archive keys of the Debian archive
  The Debian project digitally signs its Release files. This package
  contains the archive keys used for that.
