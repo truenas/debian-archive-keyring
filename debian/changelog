@@ -1,3 +1,14 @@
+debian-archive-keyring (2012.2) unstable; urgency=low
+
+  * Team upload.
+  * Add Debian Archive Automatic Signing Key (7.0/wheezy) (ID: 46925553).
+    (Closes: #671105)
+  * Add Wheezy Stable Release Key (ID: 65FFB764). (Closes: #665380)
+  * Drop the apt dependency to fix the resulting circular dependency.
+    (Closes: #672598)
+
+ -- Philipp Kern <pkern@debian.org>  Sun, 13 May 2012 17:07:09 +0200
+
 debian-archive-keyring (2012.1) unstable; urgency=low
 
   * Team upload.

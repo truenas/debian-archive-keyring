@@ -7,7 +7,7 @@ Standards-Version: 3.9.3
 
 Package: debian-archive-keyring
 Architecture: all
-Depends: gpgv, apt, ${misc:Depends}
+Depends: gpgv, ${misc:Depends}
 Recommends: gnupg
 Breaks: apt (<< 0.7.25.1)
 Description: GnuPG archive keys of the Debian archive
