@@ -1,3 +1,10 @@
+debian-archive-keyring (2012.4) unstable; urgency=low
+
+  * Team upload.
+  * Mark as multiarch foreign.
+
+ -- Philipp Kern <pkern@debian.org>  Sat, 02 Jun 2012 17:57:18 +0200
+
 debian-archive-keyring (2012.3) unstable; urgency=low
 
   * Team upload.
