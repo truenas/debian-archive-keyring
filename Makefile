@@ -49,6 +49,7 @@ clean:
 	rm -f keyrings/team-members.gpg \
 		keyrings/team-members.gpg.lastchangeset
 	rm -rf $(TMPRING) trusted.gpg trustdb.gpg
+	rm -f keyrings/*.cache
 
 install: build
 	install -d $(DESTDIR)/usr/share/keyrings/
