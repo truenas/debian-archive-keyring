@@ -43,10 +43,13 @@ $(TRUSTED-LIST) :: trusted.gpg/debian-archive-%.gpg : active-keys/add-% active-k
 
 clean:
 	rm -f keyrings/debian-archive-keyring.gpg \
+		keyrings/debian-archive-keyring.gpg~ \
 		keyrings/debian-archive-keyring.gpg.lastchangeset
 	rm -f keyrings/debian-archive-removed-keys.gpg \
+		keyrings/debian-archive-removed-keys.gpg~ \
 		keyrings/debian-archive-removed-keys.gpg.lastchangeset
 	rm -f keyrings/team-members.gpg \
+		keyrings/team-members.gpg~ \
 		keyrings/team-members.gpg.lastchangeset
 	rm -rf $(TMPRING) trusted.gpg trustdb.gpg
 	rm -f keyrings/*.cache

@@ -1,3 +1,14 @@
+debian-archive-keyring (2014.2) unstable; urgency=medium
+
+  * Team upload. (Closes: #771008)
+  * Add Debian Archive Automatic Signing Key (8/jessie) (ID: 7638D0442B90D010)
+  * Add Debian Security Archive Automatic Signing Key (8/jessie)
+    (ID: 9D6D8F6BC857C906)
+  * Remove temporary keyring files (*.gpg~) in clean target.
+  * Add a maintainer README (not currently included in the binary package).
+
+ -- Adam D. Barratt <adam@adam-barratt.org.uk>  Sun, 30 Nov 2014 12:29:30 +0000
+
 debian-archive-keyring (2014.1) unstable; urgency=medium
 
   * Team upload. (Closes: #757533)
