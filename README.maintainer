@@ -6,8 +6,7 @@ Adding a new team member key
 
 make keyrings/team-members.gpg
 gpg --no-default-keyring --keyring keyrings/team-members.gpg \
-  --no-auto-check-trustdb -import-options import-minimal \
-  --import $KEYFILE
+  --no-auto-check-trustdb --import $KEYFILE
 jetring-gen keyrings/team-members.gpg~ keyrings/team-members.gpg \
   "add adsb (ID: C5CE5DC2C542CD59)"
 jetring-accept team-members/ add-C5CE5DC2C542CD59 
@@ -17,8 +16,7 @@ Adding a new archive key
 
 make keyrings/debian-archive-keyring.gpg
 gpg --no-default-keyring --keyring keyrings/debian-archive-keyring.gpg \
-  --no-auto-check-trustdb --import-options import-minimal \
-  --import $KEYFILE
+  --no-auto-check-trustdb --import $KEYFILE
 jetring-gen keyrings/debian-archive-keyring.gpg~ \
   keyrings/debian-archive-keyring.gpg \
   "add jessie automatic key (security)"

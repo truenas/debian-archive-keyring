@@ -1,3 +1,10 @@
+debian-archive-keyring (2014.3) unstable; urgency=medium
+
+  * Team upload.
+  * Also import signatures for Jessie archive keys.
+
+ -- Adam D. Barratt <adam@adam-barratt.org.uk>  Sun, 30 Nov 2014 14:45:43 +0000
+
 debian-archive-keyring (2014.2) unstable; urgency=medium
 
   * Team upload. (Closes: #771008)
