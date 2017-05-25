@@ -1,3 +1,16 @@
+debian-archive-keyring (2017.5) unstable; urgency=medium
+
+  * Team upload.
+  * Add Debian Stable Release Key (9/stretch) (ID: EF0F382A1A7B6500)
+    (Closes: #860831)
+  * Add Debian Archive Automatic Signing Key (9/stretch) (ID: E0B11894F66AEC98)
+    and Debian Security Archive Automatic Signing Key (9/stretch)
+    (ID: EDA0D2388AE22BA9) (Closes: #860830)
+  * Move the squeeze keys to the removed keyring (Closes: #863303)
+  * Update the maintainer README to document removing keys
+
+ -- Adam D. Barratt <adam@adam-barratt.org.uk>  Thu, 25 May 2017 19:17:13 +0100
+
 debian-archive-keyring (2014.3) unstable; urgency=medium
 
   * Team upload.
