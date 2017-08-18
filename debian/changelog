@@ -3,6 +3,7 @@ debian-archive-keyring (2017.6) UNRELEASED; urgency=medium
   * Remove dependencies between the .deb package and gnupg / gpgv.  apt has
     had relevant relationships of its own for some time now, so there's no
     need for us to do so.  (Closes: #801381)
+  * Add Vcs-{Browser,Git} headers.
 
  -- Adam D. Barratt <adam@adam-barratt.org.uk>  Fri, 18 Aug 2017 20:53:05 +0100
 

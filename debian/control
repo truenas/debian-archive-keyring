@@ -4,6 +4,8 @@ Section: misc
 Maintainer: Debian Release Team <packages@release.debian.org>
 Build-Depends: debhelper (>= 7), jetring, gnupg
 Standards-Version: 3.9.3
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/devscripts.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/devscripts.git
 
 Package: debian-archive-keyring
 Architecture: all
