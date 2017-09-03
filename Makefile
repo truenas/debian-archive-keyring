@@ -27,12 +27,18 @@ verify-results: keyrings/team-members.gpg keyrings/debian-archive-keyring.gpg ke
 
 keyrings/debian-archive-keyring.gpg: active-keys/index
 	jetring-build -I $@ active-keys
+	gpg --import-options import-export --import < $@ > $@.tmp
+	mv -f $@.tmp $@
 
 keyrings/debian-archive-removed-keys.gpg: removed-keys/index
 	jetring-build -I $@ removed-keys
+	gpg --import-options import-export --import < $@ > $@.tmp
+	mv -f $@.tmp $@
 
 keyrings/team-members.gpg: team-members/index
 	jetring-build -I $@ team-members
+	gpg --import-options import-export --import < $@ > $@.tmp
+	mv -f $@.tmp $@
 
 $(TRUSTED-LIST) :: trusted.gpg/debian-archive-%.gpg : active-keys/add-% active-keys/index
 	mkdir -p $(TMPRING) trusted.gpg
@@ -40,6 +46,8 @@ $(TRUSTED-LIST) :: trusted.gpg/debian-archive-%.gpg : active-keys/add-% active-k
 	cp $< $(TMPRING)
 	jetring-build -I $@ $(TMPRING)
 	rm -rf $(TMPRING)
+	gpg --import-options import-export --import < $@ > $@.tmp
+	mv -f $@.tmp $@
 
 clean:
 	rm -f keyrings/debian-archive-keyring.gpg \
