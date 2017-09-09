@@ -1,3 +1,10 @@
+debian-archive-keyring (2017.7) UNRELEASED; urgency=medium
+
+  * Fix Vcs-* headers.  Thanks to Daniel Baumann for noticing.
+    (Closes: #874723)
+
+ -- Adam D. Barratt <adam@adam-barratt.org.uk>  Sat, 09 Sep 2017 09:55:23 +0100
+
 debian-archive-keyring (2017.6) unstable; urgency=medium
 
   * Remove dependencies between the .deb package and gnupg / gpgv.  apt has
