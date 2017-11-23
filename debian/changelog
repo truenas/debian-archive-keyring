@@ -1,7 +1,12 @@
 debian-archive-keyring (2017.7) UNRELEASED; urgency=medium
 
+  [ Adam D. Barratt ]
   * Fix Vcs-* headers.  Thanks to Daniel Baumann for noticing.
     (Closes: #874723)
+
+  [ Niels Thykier ]
+  * Remove unnecessary "XC-" prefix for "Package-Type" in the udeb
+    package.
 
  -- Adam D. Barratt <adam@adam-barratt.org.uk>  Sat, 09 Sep 2017 09:55:23 +0100
 
