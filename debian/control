@@ -11,7 +11,6 @@ Package: debian-archive-keyring
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Breaks: apt (<< 0.7.25.1)
 Description: GnuPG archive keys of the Debian archive
  The Debian project digitally signs its Release files. This package
  contains the archive keys used for that.
