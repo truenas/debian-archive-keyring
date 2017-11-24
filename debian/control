@@ -4,7 +4,7 @@ Section: misc
 Maintainer: Debian Release Team <packages@release.debian.org>
 Build-Depends: debhelper (>= 10), jetring, gnupg
 Rules-Requires-Root: no
-Standards-Version: 3.9.3
+Standards-Version: 4.1.1
 Vcs-Browser: https://anonscm.debian.org/cgit/debian-release/debian-archive-keyring.git
 Vcs-Git: https://anonscm.debian.org/git/debian-release/debian-archive-keyring.git
 
