@@ -10,8 +10,8 @@ debian-archive-keyring (2017.7) UNRELEASED; urgency=medium
   * Remove now obsolete versioned Breaks on apt.
   * Set R³ to no as debian-archive-keyring does not require (fake)root
     to build.
-  * Bump debhelper compat level to 10 but set --no-parallel as the
-    Makefile is not parallel-safe.
+  * Bump debhelper compat level to 10 but pass --no-parallel to
+    dh_auto_build as the Makefile is not parallel-safe.
   * Bump Standards-Version to 4.1.2 - no additional change required.
 
  -- Adam D. Barratt <adam@adam-barratt.org.uk>  Sat, 09 Sep 2017 09:55:23 +0100
