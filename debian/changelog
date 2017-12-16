@@ -1,3 +1,13 @@
+debian-archive-keyring (2017.7+exp) UNRELEASED; urgency=medium
+
+  * Install separate keyrings for each release in /usr/share/keyrings
+    (both in the regular deb and the udeb).  This is to enable
+    initial testing of narrowing the set of trusted keys per machine.
+    Thanks to Daniel Kahn Gillmor for the suggestion.
+    (Closes: #861695)
+
+ -- Niels Thykier <niels@thykier.net>  Sat, 16 Dec 2017 20:16:13 +0000
+
 debian-archive-keyring (2017.7) unstable; urgency=medium
 
   * Team upload.

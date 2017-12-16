@@ -64,6 +64,7 @@ clean:
 
 install: build
 	install -d $(DESTDIR)/usr/share/keyrings/
+	cp trusted.gpg/debian-archive-*.gpg $(DESTDIR)/usr/share/keyrings/
 	cp keyrings/debian-archive-keyring.gpg $(DESTDIR)/usr/share/keyrings/
 	cp keyrings/debian-archive-removed-keys.gpg $(DESTDIR)/usr/share/keyrings/
 	install -d $(DESTDIR)/etc/apt/trusted.gpg.d/
