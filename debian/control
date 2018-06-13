@@ -5,8 +5,8 @@ Maintainer: Debian Release Team <packages@release.debian.org>
 Build-Depends: debhelper (>= 10), jetring, gnupg
 Rules-Requires-Root: no
 Standards-Version: 4.1.2
-Vcs-Browser: https://anonscm.debian.org/cgit/debian-release/debian-archive-keyring.git
-Vcs-Git: https://anonscm.debian.org/git/debian-release/debian-archive-keyring.git
+Vcs-Browser: https://salsa.debian.org/release-team/debian-archive-keyring
+Vcs-Git: https://salsa.debian.org/release-team/debian-archive-keyring.git
 
 Package: debian-archive-keyring
 Architecture: all

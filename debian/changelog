@@ -1,3 +1,9 @@
+debian-archive-keyring (2018.1) UNRELEASED; urgency=medium
+
+  * Point Vcs-* headers to Salsa.
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 13 Jun 2018 20:46:53 +0200
+
 debian-archive-keyring (2017.7) unstable; urgency=medium
 
   * Team upload.
