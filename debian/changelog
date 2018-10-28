@@ -1,8 +1,17 @@
-debian-archive-keyring (2018.1) UNRELEASED; urgency=medium
+debian-archive-keyring (2018.1) unstable; urgency=medium
 
+  * Team upload.
+
+  [ Philipp Kern ]
   * Point Vcs-* headers to Salsa.
+  * Remove Wheezy's keys (automatic and stable release).
+    (Closes: #901320)
 
- -- Philipp Kern <pkern@debian.org>  Wed, 13 Jun 2018 20:46:53 +0200
+  [ Niels Thykier ]
+  * Merge "separate keyring" installation and upload it to
+    unstable (see the changelog entry for 2017.7+exp).
+
+ -- Niels Thykier <niels@thykier.net>  Sun, 28 Oct 2018 17:22:31 +0000
 
 debian-archive-keyring (2017.7+exp) experimental; urgency=medium
 
@@ -248,4 +257,3 @@ debian-archive-keyring (2006.01.10) unstable; urgency=low
   * initial release
 
  -- Michael Vogt <mvo@debian.org>  Tue, 10 Jan 2006 09:17:43 +0100
-
