@@ -1,3 +1,11 @@
+debian-archive-keyring (2019.1) UNRELEASED; urgency=medium
+
+  * Ensure separated keyrings for Wheezy's keys are removed.  Thanks
+    to Sven Joachim.
+    (Closes: #912214)
+
+ -- Adam D. Barratt <adam@adam-barratt.org.uk>  Tue, 05 Feb 2019 21:10:02 +0000
+
 debian-archive-keyring (2018.1) unstable; urgency=medium
 
   * Team upload.
