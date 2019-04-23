@@ -1,10 +1,24 @@
-debian-archive-keyring (2019.1) UNRELEASED; urgency=medium
+debian-archive-keyring (2019.1) unstable; urgency=medium
 
+  [ Adam D. Barratt ]
   * Ensure separated keyrings for Wheezy's keys are removed.  Thanks
     to Sven Joachim.
     (Closes: #912214)
 
- -- Adam D. Barratt <adam@adam-barratt.org.uk>  Tue, 05 Feb 2019 21:10:02 +0000
+  [ Jonathan Wiltshire ]
+  * Add my own key to the team-members keyring
+  * Add Debian Stable Release key (10/buster) (ID: DCC9EFBF77E11517)
+    (Closes: #917536)
+  * Add Debian Archive Automatic Signing Key (10/buster)
+    (ID: BCDDDC30D7C23CBBABEE) and Debian Security Archive Automatic
+    Signing Key (10/buster) (ID: C5FF4DFAB270CAA96DFA)
+    (Closes: #917535)
+  * Refresh the signature over keyrings/debian-archive-keyring.gpg
+
+  [ Niels Thykier ]
+  * Add myself as uploader (Closes: #927765)
+
+ -- Niels Thykier <niels@thykier.net>  Tue, 23 Apr 2019 13:42:28 +0200
 
 debian-archive-keyring (2018.1) unstable; urgency=medium
 
